@@ -1,5 +1,4 @@
 :root {
-    box-sizing: border-box;
     color-scheme: light dark;
     --bg-color: #ffffff;
     --text-color: #000000;
@@ -17,6 +16,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -28,4 +28,14 @@ body {
     font-family: var(--font-family);
     color: var(--title-color);
     font-variant: small-caps;
+    margin: 1rem;
+    letter-spacing: 0.025em;
+}
+
+.work-history {
+    margin: 1rem;
+}
+
+.work-history-header {
+    margin-bottom: 1rem;
 }
