@@ -3,6 +3,8 @@
     color-scheme: light dark;
     --bg-color: #ffffff;
     --text-color: #000000;
+    --font-family: Poppins, Helvetica, sans-serif;
+    --title-color: #3452eb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,9 +14,18 @@
     }
 }
 
-body {
+* {
     padding: 0px;
     margin: 0px;
+}
+
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+.heading {
+    font-family: var(--font-family);
+    color: var(--title-color);
+    font-variant: small-caps;
 }
