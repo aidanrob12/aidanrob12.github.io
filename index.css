@@ -48,4 +48,9 @@ ol > li {
 ul > li {
     margin-left: 1rem;
     margin-top: 0.25rem;
+    padding-left: 0.25rem;
+}
+
+ol li ul li::marker {
+    content: "👉 ";
 }
