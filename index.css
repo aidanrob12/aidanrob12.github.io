@@ -235,6 +235,7 @@ a[href*="https"]:hover {
     color: var(--bg-color);
     background: var(--text-color);
 }
+
 @media (max-width: 800px) {
     .aidan-photo {
         width: 50%;
