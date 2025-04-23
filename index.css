@@ -95,11 +95,29 @@ ol li ul li::marker {
 }
 
 .me {
-    margin: 1rem;
+    overflow: hidden;
+    margin: 1em;
 }
 
 .aidan-photo {
+    float: left;
     width: 25%;
+    margin-right: 1em;
+}
+
+.right-col {
+    float: left;
+    text-align: left;
+}
+
+.me::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    display: block;
 }
 
 @media (max-width: 800px) {
