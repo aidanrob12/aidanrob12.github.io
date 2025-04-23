@@ -18,12 +18,6 @@
     --gradient-color-2: blue;
 }
 
-@media (max-width: 500px) {
-    :root {
-        font-size: 12px;
-    }
-}
-
 * {
     padding: 0px;
     margin: 0px;
@@ -98,4 +92,28 @@ ul > li {
 
 ol li ul li::marker {
     content: "👉 ";
+}
+
+.me {
+    margin: 1rem;
+}
+
+.aidan-photo {
+    width: 25%;
+}
+
+@media (max-width: 800px) {
+    .aidan-photo {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .aidan-photo {
+        width: 100%;
+    }
 }
