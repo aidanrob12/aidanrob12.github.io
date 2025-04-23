@@ -224,11 +224,11 @@ a[href*="https"] {
 }
 
 a[href*="https"]:visited {
-    color: var(--visited-purple);
+    color: var(--gradient-color-1);
 }
 
 a[href*="https"]:hover {
-    color: var(--gradient-color-1);
+    color: var(--title-color);
 }
 
 ::selection {
