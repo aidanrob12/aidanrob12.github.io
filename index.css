@@ -9,6 +9,7 @@
     --gradient-color-2: rgb(99, 99, 255);
     --rounded-corners: 0.25rem;
     --card-color: #fff3d8;
+    --visited-purple: #551a8b;
 }
 
 [data-theme="dark"] {
@@ -217,6 +218,23 @@ ol li ul li::marker {
     font-weight: normal;
 }
 
+a[href*="https"] {
+    text-decoration: none;
+    color: inherit;
+}
+
+a[href*="https"]:visited {
+    color: var(--visited-purple);
+}
+
+a[href*="https"]:hover {
+    color: var(--gradient-color-1);
+}
+
+::selection {
+    color: var(--bg-color);
+    background: var(--text-color);
+}
 @media (max-width: 800px) {
     .aidan-photo {
         width: 50%;
