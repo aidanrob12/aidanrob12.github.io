@@ -19,6 +19,12 @@
     }
 }
 
+@media (max-width: 500px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -35,6 +41,7 @@ body {
     font-variant: small-caps;
     margin: 1rem;
     letter-spacing: 0.025em;
+    font-size: 2rem;
 }
 
 .work-history {
