@@ -8,6 +8,7 @@
     --gradient-color-1: rgb(255, 74, 74);
     --gradient-color-2: rgb(99, 99, 255);
     --rounded-corners: 0.25rem;
+    --card-color: #fff3d8;
 }
 
 [data-theme="dark"] {
@@ -16,6 +17,7 @@
     --title-color: #3b82f6;
     --gradient-color-1: red;
     --gradient-color-2: blue;
+    --card-color: #393734;
 }
 
 * {
@@ -146,9 +148,40 @@ ol li ul li::marker {
     font: inherit;
 }
 
+.professional-interests {
+    width: 100%;
+    padding: 2rem;
+}
+
+.professional-interests h2 {
+    margin-bottom: 1.5rem;
+}
+
+.cards-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    background-color: var(--card-color);
+    border-radius: var(--rounded-corners);
+    padding: 1.5rem;
+    min-height: 6rem;
+    box-shadow: 0 0.12rem 0.33rem rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
 @media (max-width: 800px) {
     .aidan-photo {
         width: 50%;
+    }
+    .cards-container {
+        flex-direction: column;
     }
 }
 
