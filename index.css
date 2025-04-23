@@ -116,8 +116,34 @@ ol li ul li::marker {
     clear: both;
 }
 
-label {
+.contact-form label {
     display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: var(--rounded-corners);
+}
+
+.contact-form textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+.contact-form button {
+    padding: 0.75rem 1rem;
+    background-image: linear-gradient(
+        0.25turn,
+        var(--gradient-color-1),
+        35%,
+        var(--gradient-color-2)
+    );
+    border: none;
+    border-radius: var(--rounded-corners);
+    font: inherit;
 }
 
 @media (max-width: 800px) {
