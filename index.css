@@ -126,8 +126,9 @@ ol li ul li::marker {
 .contact-form textarea {
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--text-color);
     border-radius: var(--rounded-corners);
+    background-color: inherit;
 }
 
 .contact-form textarea {
@@ -150,7 +151,7 @@ ol li ul li::marker {
 
 .professional-interests {
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .professional-interests h2 {
@@ -176,12 +177,63 @@ ol li ul li::marker {
     margin-bottom: 1rem;
 }
 
+.projects {
+    margin: 1rem;
+}
+
+.project-cards {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.bruin-ai {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.project-card ol {
+    counter-reset: item;
+    padding-left: 0;
+}
+
+.project-card ol > li {
+    display: block;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+}
+
+.project-card ol > li:before {
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: var(--primary-blue);
+    font-weight: 700;
+}
+
+.project-card ul {
+    list-style: none;
+    padding-left: 1.5em;
+    margin-top: 0.5em;
+}
+
+.project-card ul li {
+    position: relative;
+    margin-bottom: 0.5em;
+    font-weight: normal;
+}
+
 @media (max-width: 800px) {
     .aidan-photo {
         width: 50%;
     }
+
     .cards-container {
         flex-direction: column;
+    }
+
+    .project-cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
