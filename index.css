@@ -44,10 +44,15 @@ body {
     color: var(--text-color);
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
 .heading {
     color: var(--title-color);
     font-variant: small-caps;
-    margin: 1rem;
     letter-spacing: 0.025em;
     font-size: 2rem;
 }
