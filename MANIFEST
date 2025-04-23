@@ -8,7 +8,7 @@ CHOICES
 9a. Text Gradient
 9b. REM with root font size 12px
 12. .color-theme button has CSS color gradient AND gets bigger when you hover over it
-18.
+18. ::selector element that changes highlighting colors
 19.
 
 JAVASCRIPT
@@ -46,8 +46,8 @@ REQUIREMENT LOCATION
 13. Added flexbox
 14. Added Grid
 15. index.css
-16. 
+16. index.css
 17. index.css
 18. index.css
-19.
+19. index.css
 20.
