@@ -39,8 +39,6 @@ body {
 }
 
 .heading {
-    color: var(--title-color);
-    font-variant: small-caps;
     letter-spacing: 0.025em;
     font-size: 2rem;
 }
@@ -67,8 +65,7 @@ body {
     margin: 1rem;
 }
 
-.work-history-header {
-    font-size: 1.5rem;
+.gradient-header {
     background-image: linear-gradient(
         0.25turn,
         var(--gradient-color-1),
@@ -77,6 +74,18 @@ body {
     );
     color: transparent;
     background-clip: text;
+}
+
+.work-history-header {
+    font-size: 1.5rem;
+    /* background-image: linear-gradient(
+        0.25turn,
+        var(--gradient-color-1),
+        15%,
+        var(--gradient-color-2)
+    );
+    color: transparent;
+    background-clip: text; */
 }
 
 .work-history ol {
